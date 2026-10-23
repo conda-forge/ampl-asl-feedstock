@@ -9,6 +9,7 @@ cmake ${CMAKE_ARGS} -GNinja .. \
       -DBUILD_TESTING:BOOL=ON \
       -DBUILD_F2C:BOOL=OFF \
       -DUSE_LTO:BOOL=OFF \
+      -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
       ..
 
 cmake --build . --config Release
